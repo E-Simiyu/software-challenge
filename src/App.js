@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Button from './components/Button';
+import Joke from './components/Joke';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const initialState = {
+  joke: undefined,
+  error: undefined
 }
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = initialState;
+  }
+
+  getRandomChuckJoke = async (e) => {
+    e.preventDefault();
+    const category = e.target.elements.category.value;
+    const api_call = await fetch(`https://api.chucknorris.io/jokes/random?category=${category}`);
+    const data = await api_call.json();
+    if (category) {
+      this.setState({
+        joke: data.value,
+        error: ''
+      });
+    } else {
+      this.setState({
+        error: 'no joke'
+      });
+    }
+  }
+
+
+  render() {
+
+    const {joke, error} = this.state;
+
+    return(
+      <div>
+        <Button 
+            getRandomChuckJoke={this.getRandomChuckJoke}
+          />
+          <Joke 
+            joke={joke}
+            error={error}
+          />
+      </div>
+    );
+  }
+};
 
 export default App;
