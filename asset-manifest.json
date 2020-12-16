@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/software-challenge/static/css/main.bc6b2251.chunk.css",
+    "main.js": "/software-challenge/static/js/main.e8831f03.chunk.js",
+    "main.js.map": "/software-challenge/static/js/main.e8831f03.chunk.js.map",
+    "runtime-main.js": "/software-challenge/static/js/runtime-main.81b4774b.js",
+    "runtime-main.js.map": "/software-challenge/static/js/runtime-main.81b4774b.js.map",
+    "static/css/2.31461e4f.chunk.css": "/software-challenge/static/css/2.31461e4f.chunk.css",
+    "static/js/2.85fff51a.chunk.js": "/software-challenge/static/js/2.85fff51a.chunk.js",
+    "static/js/2.85fff51a.chunk.js.map": "/software-challenge/static/js/2.85fff51a.chunk.js.map",
+    "static/js/3.e6feaa2a.chunk.js": "/software-challenge/static/js/3.e6feaa2a.chunk.js",
+    "static/js/3.e6feaa2a.chunk.js.map": "/software-challenge/static/js/3.e6feaa2a.chunk.js.map",
+    "index.html": "/software-challenge/index.html",
+    "static/css/2.31461e4f.chunk.css.map": "/software-challenge/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.bc6b2251.chunk.css.map": "/software-challenge/static/css/main.bc6b2251.chunk.css.map",
+    "static/js/2.85fff51a.chunk.js.LICENSE.txt": "/software-challenge/static/js/2.85fff51a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81b4774b.js",
+    "static/css/2.31461e4f.chunk.css",
+    "static/js/2.85fff51a.chunk.js",
+    "static/css/main.bc6b2251.chunk.css",
+    "static/js/main.e8831f03.chunk.js"
+  ]
+}
